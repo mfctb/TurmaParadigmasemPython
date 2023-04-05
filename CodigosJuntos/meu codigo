@@ -1,0 +1,147 @@
+import os
+import time
+import math
+t = 1
+print ('Exercício 1')
+print ('Faça um Programa que mostre a mensagem Alo mundo na tela.')
+msg1 = "ALO MUNDO"
+while True: 
+ msg2 = str (input("Digite aqui a mensagem Alo Mundo\n ")).upper()
+ ok = bool(msg1 == msg2)
+ if ok:
+  print ('Alo Mundo')
+  break  
+ else:
+  print('Digite corretamente o que se pede')  
+time.sleep(t)
+os.system('clear')
+
+print ('Exercício 2')
+print ('Faça um Programa que peça um número e então mostre a mensagem O número informado foi [número].')
+n = input('Digite um número\n')
+print ('O número informado foi:',n)
+time.sleep(t)
+os.system('clear')
+
+print ('Exercício 3')
+print ('Faça um Programa que peça dois números e imprima a soma')
+n1 = float (input('Digite o 1º número\n'))
+n2 = float (input('Digite o 2º número\n'))
+s = n1 + n2
+#print ('A soma de: {} e {} é: {}'.format(n1,n2,s))
+print(f'A soma de: {n1} e {n2} é : {s}')
+time.sleep(t)
+os.system('clear')
+
+print ('Exercício 4')
+print ('Faça um Programa que peça as 4 notas bimestrais e mostre a média.')
+n1 = float (input('Digite a 1ª nota\n'))
+n2 = float (input('Digite a 2ª nota\n'))
+n3 = float (input('Digite a 3ª nota\n'))
+n4 = float (input('Digite a 4ª nota\n'))
+md = (n1 + n2 + n3 + n4)/4
+print (f'A Média é: {md}')
+#print ('A Médida é : {}'.format(md))
+time.sleep(t)
+os.system('clear')
+
+print ('Exercício 5')
+print ('Faça um Programa que converta metros para centímetros.')
+convmxc = float (input('Digite aqui um valor em metros,para ser convertido em centímetros\n'))
+convmxc = convmxc * 100              
+print (f'O valor Convertido é: {convmxc}, metros')
+#print ('O valor Convertido é: {} metros'.format(convmxc))
+time.sleep(t)
+os.system('clear')
+
+print ('Exercício 6')
+print ('Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.')
+raio = float(input('Digite o valor do raio\n'))
+area = math.pi * (raio ** 2)
+print ('O valor da área do círculo é de: ',area)
+time.sleep(t)
+os.system('clear')
+
+print ('Exercício 7')
+print ('Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.')
+base = float(input('Digite a base do quadrado\n'))
+altura = float (input('Digite a altura do quadrado\n'))
+area = base * altura
+print ('A area do quadrado é:',area,'e o dobro é:',area*2)
+time.sleep(t)
+os.system('clear')
+
+print('Exercício 8')
+print ('Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.')
+
+vlrhr = float (input('Qual valor recebido por hora?\n'))
+hrtrab = float(input('Quantas horas você trabalhou no mês?\n'))
+sal = (vlrhr * hrtrab)
+print ('O valor do seu salário no mês é de R$= ',sal)
+time.sleep(t)
+os.system('clear')
+
+print('Exercício 9')
+print('Faça um Programa que peça a temperatura em graus Fahrenheit, transforme e mostre a temperatura em graus Celsius (formula C = 5 * ((F-32) / 9).')
+grauf = float (input('Informe aqui a temperatura em graus Fahrenheit\n'))
+grauc = 5 * ((grauf-32)/9)
+print('O grau informado convertido em Graus celsius é de: ',grauc,'°C')
+time.sleep(t)
+os.system('clear')
+
+print('Exercício 10')
+print('Faça um Programa que peça a temperatura em graus Celsius, transforme e mostre em graus Fahrenheit. formula (C × 9/5) + 32 = 32 °F)')
+grauc = float(input('Informe aqui a temperatura em graus celsius\n'))
+grauf=(grauc * 9/5) + 32
+print('O grau informado convertido em Graus celsius é de: ',grauf,'°F')
+time.sleep(t)
+os.system('clear')
+
+print('Exercício 11')
+print('Faça um Programa que peça 2 números inteiros e um número real. Calcule e mostre:o produto do dobro do primeiro com metade do segundo a soma do triplo do primeiro com o terceiro.o terceiro elevado ao cubo.')
+numero1int = int (input('Digite aqui um número inteiro sem casa decimal'))
+numero2int = int (input('Digite aqui outro número inteiro sem casa decimal'))
+numerofloat = float (input('Digite aqui um número real com casa decimal'))
+calculo1 = numero1int * 2 * (numero2int / 2)
+calculo2 = (numero1int * 3) + (numerofloat)
+calculo3 = numerofloat **3
+print('a) O produto do dobro do primeiro com metade do segundo foi: ',calculo1)
+print('b) A soma do triplo do primeiro com o terceiro: ',calculo2)
+print ('c) O terceiro elevado ao cubo',calculo3)
+time.sleep(t)
+os.system('clear'
+
+print('Exercício 12')
+print('Tendo como dados de entrada a altura de uma pessoa, construa um algoritmo que calcule seu peso ideal, usando a seguinte fórmula: (72.7*altura) - 58')
+altura = float (input('Informe a sua altura:'))
+pesoideal = (72.7 * altura) - 58
+print ('o peso ideal calculado será: ',pesoideal)
+time.sleep(t)
+os.system('clear'
+
+print('Exercício 13')
+print('Tendo como dado de entrada a altura (h) de uma pessoa, construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas:
+Para homens: (72.7*h) - 58
+Para mulheres: (62.1*h) - 44.7')
+
+altura = float (input('Informe a sua altura:'))
+pesoidealhomem = (72.7 * altura) - 58
+pesoidealmulher = (62.1 * altura) - 44.7
+print ('o peso ideal calculado será para homens: ',pesoidealhomem)
+print ('o peso ideal calculado será para mulheres: ',pesoidealmulher)
+time.sleep(t)
+os.system('clear'
+
+print('Exercício 14')
+print('João Papo-de-Pescador, homem de bem, comprou um microcomputador para controlar o rendimento diário de seu trabalho. Toda vez que ele traz um peso de peixes maior que o estabelecido pelo regulamento de pesca do estado de São Paulo (50 quilos) deve pagar uma multa de R$ 4,00 por quilo excedente. João precisa que você faça um programa que leia a variável peso (peso de peixes) e calcule o excesso. Gravar na variável excesso a quantidade de quilos além do limite e na variável multa o valor da multa que João deverá pagar. Imprima os dados do programa com as mensagens adequadas.')
+
+pesopeixes = float(input('Informe qual peso dos peixes:'))
+pesopermitido = 50
+excesso = pesopeixes - 50
+multa = excesso * 4
+if pesopeixes <= 50:
+  print("Não houve excesso de peso:")
+else:
+  print('Houve excesso de peso de:',excesso,'KG e o valor à ser pago de multa é de R$=', multa))
+time.sleep(t)
+os.system('clear'

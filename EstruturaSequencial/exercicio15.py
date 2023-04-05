@@ -1,0 +1,13 @@
+salariohora = float (input('Qual valor por hora trabalhada? '))
+horasalario = float (input('Quantas horas trabalha por mês? '))
+totalsalario =  salariohora * horasalario
+ir = (0.11 * totalsalario) 
+inss = (0.08 * totalsalario)
+sindicato = (0.05 * totalsalario)
+salariobruto = totalsalario + ir + inss + sindicato
+salarioliquido = salariobruto - ir - inss - sindicato
+print ('O valor do Imposto de renda foi R$= ',ir)
+print ('O valor do INSS foi R$= ',inss)
+print ('O valor do sindicato foi R$= ',sindicato)
+print ('O valor do salario bruto foi R$= ',salariobruto)
+print ('O valor do salario liquido foi R$= ',salarioliquido)
