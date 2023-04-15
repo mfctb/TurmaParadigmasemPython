@@ -9,11 +9,11 @@ try:
       salario = 200 + 0.09 * vendas # calcula o salário do vendedor
       posicao = int((salario - 200) // 100) # calcula a posição na lista de contadores
   
-      #if posicao < 0: # corrige a posição para evitar índices negativos
-          #posicao = 0
+      if posicao < 0: # corrige a posição para evitar índices negativos
+          posicao = 0
   
-      #if posicao > 9: # corrige a posição para evitar índices maiores que 9
-          #posicao = 9
+      if posicao > 9: # corrige a posição para evitar índices maiores que 9
+          posicao = 9
   
       salarios[posicao] += 1 # incrementa o contador na posição correspondente
   
@@ -27,6 +27,5 @@ try:
   print("Salários na faixa de $800 a $899:", salarios[6])
   print("Salários na faixa de $900 a $999:", salarios[7])
   print("Salários de $1000 em diante:", salarios[8])
-  print(posicao)
 except:
   print("Dados Inválidos!")
